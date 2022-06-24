@@ -1,0 +1,16 @@
+.login_div{
+    
+    float: right;
+    top:-525px;
+    left:-100px
+}
+.header{
+    float: right;
+    margin-right:350px;
+}
+#image{
+    margin-left: 20px;
+    width: 500px;
+    height:600px;
+
+}
