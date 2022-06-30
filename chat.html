@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="chat.css">
+
+</head>
+<body>
+<div class="container">
+<button id="logout" style="float:right" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()"> Logout</button>
+<p id="userName"></p>
+
+	<center>
+		<mark class="header" style="margin-left: 100px; background-color: #ddc2f0; font-size: 30px;">	
+			Let's Chat
+			
+		</mark>
+		<br><br>
+		<img id="my_img"src="https://cdn.dribbble.com/users/4107928/screenshots/14972078/media/b725766f22a2bb6b02cf6fc42c041c7f.jpg?compress=1&resize=400x300">
+		<h3 class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label style=" margin-top:50px;font-size:20px; color: #36194f;">#Add Room:</label>
+			<input type="text" placeholder="Enter the room name" id="room" class="form-control">
+
+		</div>
+		<button class="btn btn-success" onclick="addRoom()">#Add Room</button>
+		<marquee class="color_white" style="background-color:blanchedalmond; font-size: 25px; font-weight: bold; margin-top: 25px;">#TRENDINGROOMS</marquee>
+	<div id="output"></div>
+	</center>
+</div>
+<script src="room.js"></script>
+</body>
+</html>

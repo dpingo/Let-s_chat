@@ -1,0 +1,12 @@
+body{
+    background-image: linear-gradient(#886694,#eacef5);
+    background-repeat:no-repeat, repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    /*height: 100%;*/
+}#my_img{
+    border-width:5px;
+    border-style: ridge ;
+    border-color: black;
+    border-radius:15px;
+}
